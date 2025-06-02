@@ -2,13 +2,17 @@
 
 A collection of my PowerShell scripts
 
-|Name|Category|Description|
-|-|-|-|
-|[Check-ASRRules](./scripts/Check-ASRRules)|Microsoft Intune (Compliance)|Script checks status of all ASR rules on device.|
-|[Check-BitLockerOnAllDrives](./scripts/Check-BitLockerOnAllDrives)|Microsoft Intune (Compliance)|Script checks if device has all drives encrypted with BitLocker.|
-|[Check-UnwantedProgramInstalled](./scripts/Check-UnwantedProgramInstalled)|Microsoft Intune (Compliance)|Script checks if an unwanted program is installed.|
-|[Generate-RandomUser](./scripts/Generate-RandomUser)|Active Directory|Generates random user accounts in Active Directory.|
-|[Get-IntuneComplianceTemplate](./scripts/Get-IntuneComplianceTemplate)|Templates|This template was designed for use in Device Compliance in Microsoft Intune.|
-|[Get-Template](./scripts/Get-Template)|Templates|A ready-to-use template PowerShell for miscellaneous purposes.|
-|[Test-ASRObfuscatedScript](./scripts/Test-ASRObfuscatedScript)|Security|This is a script that will test "Block execution of potentially obfuscated scripts" Attack Surface Reduction rule in Microsoft Defender for Endpoint.|
-|[Update-DynamicGroup](./scripts/Update-DynamicGroup)|Active Directory|Automates Active Directory group membership by adding/removing users based on a dynamic attribute filter, with detailed logging.|
+|Name|Description|
+|-|-|
+|**Active Directory**||
+|[Generate-RandomUser](./scripts/Generate-RandomUser)|Generates random user accounts in Active Directory.|
+|[Update-DynamicGroup](./scripts/Update-DynamicGroup)|Automates Active Directory group membership by adding/removing users based on a dynamic attribute filter, with detailed logging.|
+|**Microsoft Intune (Compliance)**||
+|[Check-ASRRules](./scripts/Check-ASRRules)|Script checks status of all ASR rules on device.|
+|[Check-BitLockerOnAllDrives](./scripts/Check-BitLockerOnAllDrives)|Script checks if device has all drives encrypted with BitLocker.|
+|[Check-UnwantedProgramInstalled](./scripts/Check-UnwantedProgramInstalled)|Script checks if an unwanted program is installed.|
+|**Security**||
+|[Test-ASRObfuscatedScript](./scripts/Test-ASRObfuscatedScript)|This is a script that will test "Block execution of potentially obfuscated scripts" Attack Surface Reduction rule in Microsoft Defender for Endpoint.|
+|**Templates**||
+|[Get-IntuneComplianceTemplate](./scripts/Get-IntuneComplianceTemplate)|This template was designed for use in Device Compliance in Microsoft Intune.|
+|[Get-Template](./scripts/Get-Template)|A ready-to-use template PowerShell for miscellaneous purposes.|
