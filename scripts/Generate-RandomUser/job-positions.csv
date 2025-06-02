@@ -1,0 +1,255 @@
+﻿position,department
+IT Support Specialist,IT
+Junior IT Support Specialist,IT
+Senior IT Support Specialist,IT
+Network Administrator,IT
+Junior Network Administrator,IT
+Senior Network Administrator,IT
+System Administrator,IT
+Junior System Administrator,IT
+Senior System Administrator,IT
+Helpdesk Technician,IT
+Junior Helpdesk Technician,IT
+Senior Helpdesk Technician,IT
+IT Project Manager,IT
+Chief Technology Officer,Board
+IT Director,IT
+Head of IT,IT
+IT Projects Director,IT
+Database Administrator,IT
+Junior Database Administrator,IT
+Senior Database Administrator,IT
+DevOps Engineer,IT
+Junior DevOps Engineer,IT
+Senior DevOps Engineer,IT
+Software Developer,IT
+Junior Software Developer,IT
+Senior Software Developer,IT
+IT Security Analyst,IT Security
+Junior IT Security Analyst,IT Security
+Senior IT Security Analyst,IT Security
+Security Operations Center Analyst,IT Security
+Junior Security Operations Center Analyst,IT Security
+Senior Security Operations Center Analyst,IT Security
+Penetration Tester,IT Security
+Junior Penetration Tester,IT Security
+Senior Penetration Tester,IT Security
+IT Security Manager,IT Security
+IT Security Director,IT Security
+Chief Information Security Officer,Board
+Head of IT Security,IT Security
+Incident Response Specialist,IT Security
+Junior Incident Response Specialist,IT Security
+Senior Incident Response Specialist,IT Security
+Vulnerability Analyst,IT Security
+Junior Vulnerability Analyst,IT Security
+Senior Vulnerability Analyst,IT Security
+HR Specialist,Human Resources
+Junior HR Specialist,Human Resources
+Senior HR Specialist,Human Resources
+Recruiter,Human Resources
+Junior Recruiter,Human Resources
+Senior Recruiter,Human Resources
+Chief Human Resources Officer,Board
+HR Manager,Human Resources
+HR Director,Human Resources
+Payroll Specialist,Human Resources
+Junior Payroll Specialist,Human Resources
+Senior Payroll Specialist,Human Resources
+Training Coordinator,Human Resources
+Junior Training Coordinator,Human Resources
+Senior Training Coordinator,Human Resources
+Compensation and Benefits Analyst,Human Resources
+Junior Compensation and Benefits Analyst,Human Resources
+Senior Compensation and Benefits Analyst,Human Resources
+HR Business Partner,Human Resources
+Junior HR Business Partner,Human Resources
+Senior HR Business Partner,Human Resources
+Finance Analyst,Finance
+Junior Finance Analyst,Finance
+Senior Finance Analyst,Finance
+Accountant,Finance
+Junior Accountant,Finance
+Senior Accountant,Finance
+Financial Controller,Finance
+Junior Financial Controller,Finance
+Senior Financial Controller,Finance
+Head of Payroll,Finance
+Payroll Accountant,Finance
+Junior Payroll Accountant,Finance
+Senior Payroll Accountant,Finance
+Chief Finance Officer,Board
+Head of Finance,Finance
+Finance Manager,Finance
+Finance Director,Finance
+Accounts Payable Specialist,Finance
+Junior Accounts Payable Specialist,Finance
+Senior Accounts Payable Specialist,Finance
+Accounts Receivable Specialist,Finance
+Junior Accounts Receivable Specialist,Finance
+Senior Accounts Receivable Specialist,Finance
+Marketing Specialist,Marketing
+Junior Marketing Specialist,Marketing
+Senior Marketing Specialist,Marketing
+Digital Marketing Manager,Marketing
+Digital Marketing Director,Marketing
+Content Writer,Marketing
+Junior Content Writer,Marketing
+Senior Content Writer,Marketing
+SEO Specialist,Marketing
+Junior SEO Specialist,Marketing
+Senior SEO Specialist,Marketing
+Social Media Manager,Marketing
+Brand Manager,Marketing
+Brand Director,Marketing
+Chief Marketing Officer,Board
+Marketing Manager,Marketing
+Marketing Analyst,Marketing
+Junior Marketing Analyst,Marketing
+Senior Marketing Analyst,Marketing
+Sales Representative,Sales
+Junior Sales Representative,Sales
+Senior Sales Representative,Sales
+Head of Sales,Sales
+Sales Director,Sales
+Sales Manager,Sales
+Account Manager,Sales
+Business Development Manager,Sales
+Customer Success Manager,Sales
+Sales Analyst,Sales
+Junior Sales Analyst,Sales
+Senior Sales Analyst,Sales
+Sales Support Specialist,Sales
+Junior Sales Support Specialist,Sales
+Senior Sales Support Specialist,Sales
+Chief Operating Officer,Board
+Head of Operations,Operations
+Operations Director,Operations
+Operations Manager,Operations
+Logistics Coordinator,Operations
+Junior Logistics Coordinator,Operations
+Senior Logistics Coordinator,Operations
+Supply Chain Analyst,Operations
+Junior Supply Chain Analyst,Operations
+Senior Supply Chain Analyst,Operations
+Procurement Specialist,Operations
+Junior Procurement Specialist,Operations
+Senior Procurement Specialist,Operations
+Warehouse Director,Operations
+Warehouse Manager,Operations
+Inventory Specialist,Operations
+Junior Inventory Specialist,Operations
+Senior Inventory Specialist,Operations
+Operations Analyst,Operations
+Junior Operations Analyst,Operations
+Senior Operations Analyst,Operations
+Legal Counsel,Legal
+Junior Legal Counsel,Legal
+Senior Legal Counsel,Legal
+Compliance Officer,Legal
+Junior Compliance Officer,Legal
+Senior Compliance Officer,Legal
+Chief Legal Officer,Board
+Head of Legal,Legal
+Paralegal,Legal
+Junior Paralegal,Legal
+Senior Paralegal,Legal
+Contract Manager,Legal
+Legal Assistant,Legal
+Junior Legal Assistant,Legal
+Senior Legal Assistant,Legal
+Customer Service Representative,Customer Service
+Junior Customer Service Representative,Customer Service
+Senior Customer Service Representative,Customer Service
+Customer Service Manager,Customer Service
+Call Center Agent,Customer Service
+Junior Call Center Agent,Customer Service
+Senior Call Center Agent,Customer Service
+Technical Support Specialist,Customer Service
+Junior Technical Support Specialist,Customer Service
+Senior Technical Support Specialist,Customer Service
+Customer Experience Specialist,Customer Service
+Junior Customer Experience Specialist,Customer Service
+Senior Customer Experience Specialist,Customer Service
+Customer Care Supervisor,Customer Service
+Junior Customer Care Supervisor,Customer Service
+Senior Customer Care Supervisor,Customer Service
+Project Director,Project Management
+Project Manager,Project Management
+Project Coordinator,Project Management
+Junior Project Coordinator,Project Management
+Senior Project Coordinator,Project Management
+Scrum Master,Project Management
+Junior Scrum Master,Project Management
+Senior Scrum Master,Project Management
+Project Scheduler,Project Management
+Junior Project Scheduler,Project Management
+Senior Project Scheduler,Project Management
+Project Analyst,Project Management
+Junior Project Analyst,Project Management
+Senior Project Analyst,Project Management
+Chief Product Officer,Board
+Head of Product,Product Management
+Product Manager,Product Management
+Product Owner,Product Management
+Junior Product Owner,Product Management
+Senior Product Owner,Product Management
+Product Analyst,Product Management
+Junior Product Analyst,Product Management
+Senior Product Analyst,Product Management
+Product Marketing Manager,Product Management
+Product Designer,Product Management
+Junior Product Designer,Product Management
+Senior Product Designer,Product Management
+Research Analyst,Research & Development
+Junior Research Analyst,Research & Development
+Senior Research Analyst,Research & Development
+R&D Engineer,Research & Development
+Junior R&D Engineer,Research & Development
+Senior R&D Engineer,Research & Development
+Research Scientist,Research & Development
+Junior Research Scientist,Research & Development
+Senior Research Scientist,Research & Development
+Innovation Manager,Research & Development
+Lab Technician,Research & Development
+Junior Lab Technician,Research & Development
+Senior Lab Technician,Research & Development
+Head of R&D,Research & Development
+R&D Director,Research & Development
+R&D Manager,Research & Development
+Administrative Assistant,Administration
+Junior Administrative Assistant,Administration
+Senior Administrative Assistant,Administration
+Office Manager,Administration
+Receptionist,Administration
+Junior Receptionist,Administration
+Senior Receptionist,Administration
+Executive Assistant,Administration
+Junior Executive Assistant,Administration
+Senior Executive Assistant,Administration
+Administrative Coordinator,Administration
+Junior Administrative Coordinator,Administration
+Senior Administrative Coordinator,Administration
+Facilities Manager,Facilities
+Maintenance Technician,Facilities
+Junior Maintenance Technician,Facilities
+Senior Maintenance Technician,Facilities
+Security Guard,Facilities
+Junior Security Guard,Facilities
+Senior Security Guard,Facilities
+Facilities Coordinator,Facilities
+Junior Facilities Coordinator,Facilities
+Senior Facilities Coordinator,Facilities
+Data Analyst,Data & Analytics
+Junior Data Analyst,Data & Analytics
+Senior Data Analyst,Data & Analytics
+Business Intelligence Analyst,Data & Analytics
+Junior Business Intelligence Analyst,Data & Analytics
+Senior Business Intelligence Analyst,Data & Analytics
+Data Scientist,Data & Analytics
+Junior Data Scientist,Data & Analytics
+Senior Data Scientist,Data & Analytics
+Data Engineer,Data & Analytics
+Junior Data Engineer,Data & Analytics
+Senior Data Engineer,Data & Analytics
+Analytics Manager,Data & Analytics
