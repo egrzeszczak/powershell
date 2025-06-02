@@ -1,0 +1,23 @@
+{
+   "Rules": [
+      {
+         "SettingName": "WindowsADKInstalled",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "false",
+         "MoreInfoUrl": "https://learn.microsoft.com/pl-pl/windows-hardware/get-started/adk-install",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Windows ADK nie jest dozwolony do użytku w tej organizacji",
+               "Description": "Windows ADK nie jest dozwolone do użytku w tej organizacji. Wykryto zainstalowany Windows Assessment and Deployment Kit."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Windows ADK is not allowed to be installed in this organization",
+               "Description": "Windows ADK is not allowed to be installed in this organization. Detected Windows Assessment and Deployment Kit."
+            }
+         ]
+      }
+   ]
+}
