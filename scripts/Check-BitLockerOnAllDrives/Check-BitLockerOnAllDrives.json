@@ -1,0 +1,23 @@
+{
+   "Rules": [
+      {
+         "SettingName": "DetectedUnencryptedDrives",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "None",
+         "MoreInfoUrl": "https://support.microsoft.com/pl-pl/windows/szyfrowanie-dysk%C3%B3w-funkcj%C4%85-bitlocker-76b92ac9-1040-48d6-9f5f-d14b3c5fa178",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Wszystkie dyski MUSZĄ być zaszyfrowane",
+               "Description": "Wszystkie dyski MUSZĄ być zaszyfrowane BitLockerem. Wykryte dyski bez BitLockera to: {ActualValue}."
+            },
+            {
+               "Language": "en_US",
+               "Title": "All drives MUST be encrypted",
+               "Description": "All drives MUST be encrypted with BitLocker. Drives without BitLocker encryption are: {ActualValue}."
+            }
+         ]
+      }
+   ]
+}
