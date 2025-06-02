@@ -1,0 +1,23 @@
+{
+   "Rules": [
+      {
+         "SettingName": "ComputerColor",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "Red",
+         "MoreInfoUrl": "https://support.microsoft.com/",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Kolor komputera POWINIEN być czerwony",
+               "Description": "Kolor komputera POWINIEN być czerwony, natomiast wykryto wartość: {ActualValue}."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Computer colors SHOULD be red",
+               "Description": "Computer colors SHOULD be red, however the detected value is: {ActualValue}."
+            }
+         ]
+      }
+   ]
+}
