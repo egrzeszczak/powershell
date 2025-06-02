@@ -469,25 +469,25 @@ foreach ($rule in $ASRRuleMap.GetEnumerator()) {
 
 # Prepare the result as a hashtable. If no unencrypted drives are found, set value to "None".
 $Result = @{
-    AsrVulnerableSignedDriver =     ($ASRRules | Where-Object ($_.Name -eq "AsrVulnerableSignedDriver")).Action;
-    AsrAdobeReaderChildProcess =    ($ASRRules | Where-Object ($_.Name -eq "AsrAdobeReaderChildProcess")).Action;
-    AsrOfficeChildProcess =         ($ASRRules | Where-Object ($_.Name -eq "AsrOfficeChildProcess")).Action;
-    AsrLsassCredentialTheft =       ($ASRRules | Where-Object ($_.Name -eq "AsrLsassCredentialTheft")).Action;
-    AsrExecutableEmailContent =     ($ASRRules | Where-Object ($_.Name -eq "AsrExecutableEmailContent")).Action;
-    AsrUntrustedExecutable =        ($ASRRules | Where-Object ($_.Name -eq "AsrUntrustedExecutable")).Action;
-    AsrObfuscatedScript =           ($ASRRules | Where-Object ($_.Name -eq "AsrObfuscatedScript")).Action;
-    AsrScriptExecutableDownload =   ($ASRRules | Where-Object ($_.Name -eq "AsrScriptExecutableDownload")).Action;
-    AsrExecutableOfficeContent =    ($ASRRules | Where-Object ($_.Name -eq "AsrExecutableOfficeContent")).Action;
-    AsrOfficeProcessInjection =     ($ASRRules | Where-Object ($_.Name -eq "AsrOfficeProcessInjection")).Action;
-    AsrOfficeCommAppChildProcess =  ($ASRRules | Where-Object ($_.Name -eq "AsrOfficeCommAppChildProcess")).Action;
-    AsrPersistenceThroughWmi =      ($ASRRules | Where-Object ($_.Name -eq "AsrPersistenceThroughWmi")).Action;
-    AsrPsexecWmiChildProcess =      ($ASRRules | Where-Object ($_.Name -eq "AsrPsexecWmiChildProcess")).Action;
-    AsrSafeModeReboot =             ($ASRRules | Where-Object ($_.Name -eq "AsrSafeModeReboot")).Action;
-    AsrUntrustedUsbProcess =        ($ASRRules | Where-Object ($_.Name -eq "AsrUntrustedUsbProcess")).Action;
-    AsrAbusedSystemTool =           ($ASRRules | Where-Object ($_.Name -eq "AsrAbusedSystemTool")).Action;
-    AsrServerWebshellCreation =     ($ASRRules | Where-Object ($_.Name -eq "AsrServerWebshellCreation")).Action;
-    AsrOfficeMacroWin32ApiCalls =   ($ASRRules | Where-Object ($_.Name -eq "AsrOfficeMacroWin32ApiCalls")).Action;
-    AsrRansomware =                 ($ASRRules | Where-Object ($_.Name -eq "AsrRansomware")).Action;
+    AsrVulnerableSignedDriver =     ($ASRRules | Where-Object { $_.Name -eq "AsrVulnerableSignedDriver" }).Action;
+    AsrAdobeReaderChildProcess =    ($ASRRules | Where-Object { $_.Name -eq "AsrAdobeReaderChildProcess" }).Action;
+    AsrOfficeChildProcess =         ($ASRRules | Where-Object { $_.Name -eq "AsrOfficeChildProcess" }).Action;
+    AsrLsassCredentialTheft =       ($ASRRules | Where-Object { $_.Name -eq "AsrLsassCredentialTheft" }).Action;
+    AsrExecutableEmailContent =     ($ASRRules | Where-Object { $_.Name -eq "AsrExecutableEmailContent" }).Action;
+    AsrUntrustedExecutable =        ($ASRRules | Where-Object { $_.Name -eq "AsrUntrustedExecutable" }).Action;
+    AsrObfuscatedScript =           ($ASRRules | Where-Object { $_.Name -eq "AsrObfuscatedScript" }).Action;
+    AsrScriptExecutableDownload =   ($ASRRules | Where-Object { $_.Name -eq "AsrScriptExecutableDownload" }).Action;
+    AsrExecutableOfficeContent =    ($ASRRules | Where-Object { $_.Name -eq "AsrExecutableOfficeContent" }).Action;
+    AsrOfficeProcessInjection =     ($ASRRules | Where-Object { $_.Name -eq "AsrOfficeProcessInjection" }).Action;
+    AsrOfficeCommAppChildProcess =  ($ASRRules | Where-Object { $_.Name -eq "AsrOfficeCommAppChildProcess" }).Action;
+    AsrPersistenceThroughWmi =      ($ASRRules | Where-Object { $_.Name -eq "AsrPersistenceThroughWmi" }).Action;
+    AsrPsexecWmiChildProcess =      ($ASRRules | Where-Object { $_.Name -eq "AsrPsexecWmiChildProcess" }).Action;
+    AsrSafeModeReboot =             ($ASRRules | Where-Object { $_.Name -eq "AsrSafeModeReboot" }).Action;
+    AsrUntrustedUsbProcess =        ($ASRRules | Where-Object { $_.Name -eq "AsrUntrustedUsbProcess" }).Action;
+    AsrAbusedSystemTool =           ($ASRRules | Where-Object { $_.Name -eq "AsrAbusedSystemTool" }).Action;
+    AsrServerWebshellCreation =     ($ASRRules | Where-Object { $_.Name -eq "AsrServerWebshellCreation" }).Action;
+    AsrOfficeMacroWin32ApiCalls =   ($ASRRules | Where-Object { $_.Name -eq "AsrOfficeMacroWin32ApiCalls" }).Action;
+    AsrRansomware =                 ($ASRRules | Where-Object { $_.Name -eq "AsrRansomware" }).Action;
 }
 
 # Return the result as a compressed JSON string for Intune compliance reporting
