@@ -17,7 +17,7 @@
     Compatibility:  >5.0
 
 .LINK
-    [Optional: Link to related documentation or resources]
+    https://support.microsoft.com/pl-pl/windows/szyfrowanie-dysk%C3%B3w-funkcj%C4%85-bitlocker-76b92ac9-1040-48d6-9f5f-d14b3c5fa178
 #>
 
 
