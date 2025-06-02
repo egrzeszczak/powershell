@@ -9,4 +9,5 @@ A collection of my PowerShell scripts
 |[Generate-RandomUser](./scripts/Generate-RandomUser)|Active Directory|Generates random user accounts in Active Directory.|
 |[Get-IntuneComplianceTemplate](./scripts/Get-IntuneComplianceTemplate)|Microsoft Intune (Compliance)|This template was designed for use in Device Compliance in Microsoft Intune.|
 |[Get-Template](./scripts/Get-Template)|Miscellaneous|A ready-to-use template PowerShell for miscellaneous purposes.|
+|[Test-ASRObfuscatedScript](./scripts/Test-ASRObfuscatedScript)|Security|This is a script that will test "Block execution of potentially obfuscated scripts" Attack Surface Reduction rule in Microsoft Defender for Endpoint.|
 |[Update-DynamicGroup](./scripts/Update-DynamicGroup)|Active Directory|Automates Active Directory group membership by adding/removing users based on a dynamic attribute filter, with detailed logging.|
