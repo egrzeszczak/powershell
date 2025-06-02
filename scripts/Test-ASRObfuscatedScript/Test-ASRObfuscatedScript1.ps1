@@ -22,6 +22,7 @@
 
 .LINK
     https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-execution-of-potentially-obfuscated-scripts
+    https://github.com/danielbohannon/Invoke-Obfuscation
 #>
 
 # Output the first sentence using Write-Output (Token->String->1)
