@@ -1,0 +1,213 @@
+{
+   "Rules": [
+      {
+         "SettingName": "RealtimeProtection",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/configure-protection-features-microsoft-defender-antivirus",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Uruchom ochronę w trybie rzeczywistym w Microsoft Defender",
+               "Description": "Urządzenie POWINNO miec skonfigurowaną i uruchomioną ochronę w trybie rzeczywistym w programie Microsoft Defender"
+            },
+            {
+               "Language": "en_US",
+               "Title": "Enable real-time protection in Microsoft Defender",
+               "Description": "Device SHOULD have real-time protection configured and enabled in Microsoft Defender"
+            }
+         ]
+      },
+      {
+         "SettingName": "OnAccessProtection",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/configure-protection-features-microsoft-defender-antivirus",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Uruchom ochronę ciągłą w Microsoft Defender",
+               "Description": "Urządzenie POWINNO miec skonfigurowaną i uruchomioną ochronę ciągłą (On Access) w programie Microsoft Defender"
+            },
+            {
+               "Language": "en_US",
+               "Title": "Enable on access protection in Microsoft Defender",
+               "Description": "Device SHOULD have on access protection configured and enabled in Microsoft Defender"
+            }
+         ]
+      },
+      {
+         "SettingName": "AntimalwareMode",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "Normal",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/device-health-microsoft-defender-antivirus-health#antivirus-mode-card",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Microsoft Defender nie jest w trybie aktywnym",
+               "Description": "Urządenie POWINNO mieć skonfigurowany i uruchomiony program Microsoft Defender w trybie aktywnym, a wykryto tryb: {ActualValue}."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Microsoft Defender is not in active mode",
+               "Description": "Device SHOULD have Microsoft Defender configured and enabled in Active Mode (detected: {ActualValue})."
+            }
+         ]
+      },
+      {
+         "SettingName": "TamperProtection",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Ochrona przed manipulacją nie jest uruchomiona",
+               "Description": "Microsoft Defender na tym urządzeniu POWINIEN mieć skonfigurowaną i uruchomioną ochronę przez manipulacją."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Tamper protection is not enabled",
+               "Description": "Microsoft Defender SHOULD have tamper protection configured and enabled."
+            }
+         ]
+      },
+      {
+         "SettingName": "AntispywareOn",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://support.microsoft.com/",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Ochrona przed oprogramowaniem szpiegowskim nie jest uruchomiona",
+               "Description": "Urządzenie POWINNO mieć skonfigurowaną ochronę przed oprogramowaniem szpiegowskim w Microsoft Defender."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Antispyware protection is not enabled",
+               "Description": "The device SHOULD have antispyware enabled in Microsoft Defender."
+            }
+         ]
+      },
+      {
+         "SettingName": "DeviceOnboarded",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/switch-to-mde-phase-3",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Urządzenie nie jest zarejestrowane w Microsoft Defender for Endpoint",
+               "Description": "Urządzenie POWINNO być zarejestrowane w Microsoft Defender for Endpoint i widnieć w rejestrze urządzeń objętych ochroną w portalu Defender."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Device is not onboarded to Microsoft Defender for Endpoint",
+               "Description": "Device SHOULD be onboarded to Microsoft Defender for Endpoint and visible in the Microsoft Defender portal."
+            }
+         ]
+      },
+      {
+         "SettingName": "AntivirusOn",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Antywirus nie jest aktywny",
+               "Description": "Urządzenie POWINNO mieć aktywnego antywirusa."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Antivirus is not enabled",
+               "Description": "Device SHOULD have Microsoft Defender antivirus capabilities enabled."
+            }
+         ]
+      },
+      {
+         "SettingName": "NetworkProtectionMode",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "Block",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/enable-network-protection",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Ochrona sieci nie jest w trybie blokowania",
+               "Description": "Urządzenie POWINNO mieć skonfigurowaną i uruchomioną ochronę sieci w trybie blokowania."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Network protection is not in block mode",
+               "Description": "Device SHOULD have network protection configured and enabled in block mode."
+            }
+         ]
+      },
+      {
+         "SettingName": "AntimalwareOn",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Ochrona przed złośliwym oprogramowaniem nie jest uruchomiona",
+               "Description": "Microsoft Defender nie ma uruchomionej funkcjonalności ochrony przed złośliwym oprogramowaniem."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Antimalware is not enabled",
+               "Description": "Micorosft Defender on this device SHOULD have antimalware capabilities configured and enabled"
+            }
+         ]
+      },
+      {
+         "SettingName": "DeviceOrganization",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "00000000-0000-0000-0000-000000000000", 
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/switch-to-mde-phase-3",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Urządzenie nie jest zarejestrowane w odpowiedniej dzierżawie Microsoft Defender for Endpoint",
+               "Description": "Urządzenie POWINNO być zarejestrowane w organizacyjnej dzierżawie Microsoft Defender for Endpoint (o identyfikatorze 00000000-0000-0000-0000-000000000000, a wykryto: {ActualValue})."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Device is not onboarded to correct Microsoft Defender for Endpoint tenant",
+               "Description": "Device SHOULD be onboarded to correct Microsoft Defender for Endpoint tenant (with an ID: 00000000-0000-0000-0000-000000000000, detected ID: {ActualValue})."
+            }
+         ]
+      },
+      {
+         "SettingName": "BehaviorMonitoring",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Monitorowanie zachowania przez Microsoft Defender nie jest uruchomione",
+               "Description": "Urządzenie POWINNO mieć skonfigurowaną i uruchomioną usługę monitorowania zachowania."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Behavior monitoring is not enabled in Microsoft Defender",
+               "Description": "The device SHOULD have it's behavior monitoring functionality in Microsoft Defender configured and enabled."
+            }
+         ]
+      }
+   ]
+}

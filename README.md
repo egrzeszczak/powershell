@@ -14,6 +14,7 @@ A collection of my PowerShell scripts
 |[Check-ASRRules](./scripts/Check-ASRRules)|Script checks status of all ASR rules on device.|
 |[Check-BitLockerOnAllDrives](./scripts/Check-BitLockerOnAllDrives)|Script checks if device has all drives encrypted with BitLocker.|
 |[Check-UnwantedProgramInstalled](./scripts/Check-UnwantedProgramInstalled)|Script checks if an unwanted program is installed.|
+|[Check-MicrosoftDefenderForEndpoint](./scripts/Check-MicrosoftDefenderForEndpoint)|Script checks for basic Microsoft Defender for Endpoint configuration.|
 
 ## **Security**
 |Name|Description|
