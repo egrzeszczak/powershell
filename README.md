@@ -20,7 +20,7 @@ A collection of my PowerShell scripts
 ## **Windows Security**
 |Name|Description|
 |-|-|
-|[Test-ASRObfuscatedScript](./scripts/Test-ASRObfuscatedScript)|This is a script that will test "Block execution of potentially obfuscated scripts" Attack Surface Reduction rule in Microsoft Defender for Endpoint.|
+|[Test-ASRObfuscatedScript](./scripts/windows-security/Test-ASRObfuscatedScript)|This is a script that will test "Block execution of potentially obfuscated scripts" Attack Surface Reduction rule in Microsoft Defender for Endpoint.|
 
 ## **Miscellaneous**
 |Name|Description|
