@@ -11,7 +11,7 @@ A collection of my PowerShell scripts
 ## **Microsoft Intune (Compliance)**
 |Name|Description|
 |-|-|
-|[Check-ASRRules](./scripts/intune-compliance/Check-ASRRules)|Script checks status of all ASR rules on device.|
+|[Check-AttackSurfaceReduction](./scripts/intune-compliance/Check-AttackSurfaceReduction)|Script checks status of all Attack Surface Reduction rules on device.|
 |[Check-BitLockerOnAllDrives](./scripts/intune-compliance/Check-BitLockerOnAllDrives)|Script checks if device has all drives encrypted with BitLocker.|
 |[Check-MicrosoftDefenderForEndpoint](./scripts/intune-compliance/Check-MicrosoftDefenderForEndpoint)|Script checks for basic Microsoft Defender for Endpoint configuration.|
 |[Check-Template](./scripts/intune-compliance/Check-Template)|This template was designed for use in Device Compliance in Microsoft Intune.|

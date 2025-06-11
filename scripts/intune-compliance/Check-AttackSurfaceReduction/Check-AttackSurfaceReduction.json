@@ -1,0 +1,23 @@
+{
+   "Rules": [
+      {
+         "SettingName": "AsrRansomware",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "Block",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#use-advanced-protection-against-ransomware",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Redukcja powierzchni ataku nie jest ustawiona w trybie blokowania",
+               "Description": "Reguła 'Zaawansowana ochrona przed oprogramowaniem ransomware' powinna być skonfigurowana w trybie blokady, aby zapewnić maksymalną ochronę przed zagrożeniami ransomware. Obecna wartość ustawienia to: {ActualValue}. Skontaktuj się z działem bezpieczeństwa IT."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Attack Surface Reduction not set to Block",
+               "Description": "The 'Use advanced protection against ransomware' Attack Surface Reduction rule should be configured in Block mode to provide optimal protection against ransomware threats. The current setting is: {ActualValue}. It is recommended to set this rule to 'Block' to effectively reduce the attack surface. Contact your IT Security department."
+            }
+         ]
+      }
+   ]
+}
