@@ -9,13 +9,89 @@
          "RemediationStrings": [
             {
                "Language": "pl_PL",
-               "Title": "Redukcja powierzchni ataku nie jest ustawiona w trybie blokowania",
-               "Description": "Reguła 'Zaawansowana ochrona przed oprogramowaniem ransomware' powinna być skonfigurowana w trybie blokady, aby zapewnić maksymalną ochronę przed zagrożeniami ransomware. Obecna wartość ustawienia to: {ActualValue}. Skontaktuj się z działem bezpieczeństwa IT."
+               "Title": "Reguła redukcji powierzchni ataku nie jest ustawiona w trybie blokowania",
+               "Description": "Reguła 'Use advanced protection against ransomware' powinna być skonfigurowana w trybie blokady, aby zapewnić maksymalną ochronę przed zagrożeniami ransomware. Obecna wartość ustawienia to: {ActualValue}. Skontaktuj się z działem bezpieczeństwa IT."
             },
             {
                "Language": "en_US",
-               "Title": "Attack Surface Reduction not set to Block",
+               "Title": "Attack Surface Reduction rule not set to Block",
                "Description": "The 'Use advanced protection against ransomware' Attack Surface Reduction rule should be configured in Block mode to provide optimal protection against ransomware threats. The current setting is: {ActualValue}. It is recommended to set this rule to 'Block' to effectively reduce the attack surface. Contact your IT Security department."
+            }
+         ]
+      },
+      {
+         "SettingName": "AsrObfuscatedScript",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "Block",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-execution-of-potentially-obfuscated-scripts",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Reguła redukcji powierzchni ataku nie jest ustawiona w trybie blokowania",
+               "Description": "Reguła 'Block execution of potentially obfuscated scripts' powinna być skonfigurowana w trybie blokady, aby zapewnić maksymalną ochronę przed zacieniowanymi skryptami. Obecna wartość ustawienia to: {ActualValue}. Skontaktuj się z działem bezpieczeństwa IT."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Attack Surface Reduction rule not set to Block",
+               "Description": "The 'Block execution of potentially obfuscated scripts' Attack Surface Reduction rule should be configured in Block mode to provide optimal protection against malicious scripts. The current setting is: {ActualValue}. It is recommended to set this rule to 'Block' to effectively reduce the attack surface. Contact your IT Security department."
+            }
+         ]
+      },
+      {
+         "SettingName": "AsrScriptExecutableDownload",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "Block",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-javascript-or-vbscript-from-launching-downloaded-executable-content",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Reguła redukcji powierzchni ataku nie jest ustawiona w trybie blokowania",
+               "Description": "Reguła 'Block JavaScript or VBScript from launching downloaded executable content' powinna być skonfigurowana w trybie blokady, aby zapewnić ochronę przed złośliwymi skryptami. Obecna wartość ustawienia to: {ActualValue}. Skontaktuj się z działem bezpieczeństwa IT."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Attack Surface Reduction rule not set to Block",
+               "Description": "The 'Block JavaScript or VBScript from launching downloaded executable content' Attack Surface Reduction rule should be configured in Block mode to provide protection against malicious scripts. The current setting is: {ActualValue}. It is recommended to set this rule to 'Block' to effectively reduce the attack surface. Contact your IT Security department."
+            }
+         ]
+      },
+      {
+         "SettingName": "AsrExecutableEmailContent",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "Block",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-executable-content-from-email-client-and-webmail",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Reguła redukcji powierzchni ataku nie jest ustawiona w trybie blokowania",
+               "Description": "Reguła 'Block executable content from email client and webmail' powinna być skonfigurowana w trybie blokady, aby zapewnić ochronę przed złośliwym oprogramowaniem pobranym z klientów pocztowych. Obecna wartość ustawienia to: {ActualValue}. Skontaktuj się z działem bezpieczeństwa IT."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Attack Surface Reduction rule not set to Block",
+               "Description": "The 'Block executable content from email client and webmail' Attack Surface Reduction rule should be configured in Block mode to provide protection against malicious software downloaded from email clients. The current setting is: {ActualValue}. It is recommended to set this rule to 'Block' to effectively reduce the attack surface. Contact your IT Security department."
+            }
+         ]
+      },
+      {
+         "SettingName": "AsrUntrustedUsbProcess",
+         "Operator": "IsEquals",
+         "DataType": "String",
+         "Operand": "Block",
+         "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-untrusted-and-unsigned-processes-that-run-from-usb",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Reguła redukcji powierzchni ataku nie jest ustawiona w trybie blokowania",
+               "Description": "Reguła 'Block untrusted and unsigned processes that run from USB' powinna być skonfigurowana w trybie blokady, aby zapewnić ochronę przed zagrożeniami dostarczonymi przez zewnętrzne pamięci masowe USB. Obecna wartość ustawienia to: {ActualValue}. Skontaktuj się z działem bezpieczeństwa IT."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Attack Surface Reduction rule not set to Block",
+               "Description": "The 'Block untrusted and unsigned processes that run from USB' Attack Surface Reduction rule should be configured in Block mode to provide protection against payloads delivered via an USB storage device. The current setting is: {ActualValue}. It is recommended to set this rule to 'Block' to effectively reduce the attack surface. Contact your IT Security department."
             }
          ]
       }
