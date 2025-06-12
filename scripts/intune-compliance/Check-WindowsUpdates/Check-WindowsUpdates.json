@@ -1,0 +1,23 @@
+{
+   "Rules": [
+      {
+         "SettingName": "LatestHotFixViolation",
+         "Operator": "IsEquals",
+         "DataType": "Boolean",
+         "Operand": "true",
+         "MoreInfoUrl": "https://support.microsoft.com/",
+         "RemediationStrings": [
+            {
+               "Language": "pl_PL",
+               "Title": "Nieaktualne aktualizacje systemu Windows",
+               "Description": "Urządzenie POWINNO być aktualizowane na bieżąco. Ostatnia aktualizacja zainstalowana za urządzeniu jest starsza niż 3 tygodnie."
+            },
+            {
+               "Language": "en_US",
+               "Title": "Outdated Windows system updates",
+               "Description": "The device SHOULD be updated regularly. Latest update has been installed more than 3 weeks ago."
+            }
+         ]
+      }
+   ]
+}

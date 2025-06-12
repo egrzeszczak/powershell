@@ -16,6 +16,7 @@ A collection of my PowerShell scripts
 |[Check-MicrosoftDefenderForEndpoint](./scripts/intune-compliance/Check-MicrosoftDefenderForEndpoint)|Script checks for basic Microsoft Defender for Endpoint configuration.|
 |[Check-Template](./scripts/intune-compliance/Check-Template)|This template was designed for use in Device Compliance in Microsoft Intune.|
 |[Check-UnwantedProgramInstalled](./scripts/intune-compliance/Check-UnwantedProgramInstalled)|Script checks if an unwanted program is installed.|
+|[Check-WindowsUpdates](./scripts/intune-compliance/Check-WindowsUpdates)|Script checks for outdates updates.|
 
 ## **Windows Security**
 |Name|Description|
