@@ -21,6 +21,7 @@ A collection of my PowerShell scripts
 ## **Windows Security**
 |Name|Description|
 |-|-|
+|[Disable-ExecutionFromDirectory](./scripts/windows-security/Disable-ExecutionFromDirectory)|Script forcing an execution restriction on a directory location (example: `%UserProfile%\Downloads`)|
 |[Test-ASRObfuscatedScript](./scripts/windows-security/Test-ASRObfuscatedScript)|This is a script that will test "Block execution of potentially obfuscated scripts" Attack Surface Reduction rule in Microsoft Defender for Endpoint.|
 
 ## **Miscellaneous**

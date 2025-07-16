@@ -17,7 +17,7 @@
 .NOTES
     Author:         egrzeszczak
     Created:        2025-07-02
-    Version:        v1.0.0
+    Version:        v1.0.2
     Dependencies:   -
     Compatibility:  >=5.0
 
@@ -113,13 +113,17 @@ foreach ($name in $policyDefaults.Keys) {
 ##  Add new path rules for specified directories only if not already present
 foreach ($Directory in $RestrictedDirectories) {
     $alreadyExists = $false
+    $expandedDirectory = [Environment]::ExpandEnvironmentVariables($Directory)
     $existingPaths = Get-ChildItem -Path $PathsPath -ErrorAction SilentlyContinue
     if ($existingPaths) {
         foreach ($pathKey in $existingPaths) {
             $itemData = (Get-ItemProperty -Path $pathKey.PSPath -Name 'ItemData' -ErrorAction SilentlyContinue).ItemData
-            if ($itemData -eq $Directory) {
-                $alreadyExists = $true
-                break
+            if ($itemData) {
+                $expandedItemData = [Environment]::ExpandEnvironmentVariables($itemData)
+                if ($expandedItemData -eq $expandedDirectory) {
+                    $alreadyExists = $true
+                    break
+                }
             }
         }
     }
@@ -134,6 +138,8 @@ foreach ($Directory in $RestrictedDirectories) {
             New-ItemProperty -Path $newpathkey -Name 'SaferFlags' -Value 0 -PropertyType DWord | Out-Null
             New-ItemProperty -Path $newpathkey -Name 'ItemData' -Value $Directory -PropertyType ExpandString | Out-Null
         }
+    } else {
+        Write-Host "Path rule for $Directory already exists. Skipping."
     }
 }
 
