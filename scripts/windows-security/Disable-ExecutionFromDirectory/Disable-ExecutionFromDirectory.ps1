@@ -12,7 +12,7 @@
     Array of extensions that will be restricted from executing within locations specified in $RestrictedDirectories
 
 .EXAMPLE
-    .\Disable-ExeuctionFromDirectory.ps1
+    .\Disable-ExecutionFromDirectory.ps1
 
 .NOTES
     Author:         egrzeszczak
@@ -37,7 +37,9 @@ param (
         'ADE', 'ADP', 'BAS', 'BAT', 'CHM', 'CMD', 'COM', 'CPL', 'CRT', 'EXE', 'HLP', 'HTA',
         'INF', 'INS', 'ISP', 'LNK', 'MDB', 'MDE', 'MSC', 'MSI', 'MSP', 'MST', 'OCX', 'PCD',
         'PIF', 'REG', 'SCR', 'SHS', 'URL', 'VB', 'WSC'
-    )
+    ),
+
+    [switch] $WhatIf
 )
 
 ##  Check for admin privileges
@@ -52,15 +54,43 @@ $CodeIdentifiersPath = "$BaseRegPath\codeidentifiers"
 $PathsPath = "$CodeIdentifiersPath\0\Paths"
 
 ##  Ensure base keys exist (do not remove anything)
-if (-not (Test-Path $BaseRegPath)) { New-Item $BaseRegPath | Out-Null }
-if (-not (Test-Path $CodeIdentifiersPath)) { New-Item $CodeIdentifiersPath | Out-Null }
-if (-not (Test-Path "$CodeIdentifiersPath\0")) { New-Item "$CodeIdentifiersPath\0" | Out-Null }
-if (-not (Test-Path $PathsPath)) { New-Item $PathsPath | Out-Null }
+if (-not (Test-Path $BaseRegPath)) {
+    if ($WhatIf) {
+        Write-Host "Would create registry key: $BaseRegPath"
+    } else {
+        New-Item $BaseRegPath | Out-Null
+    }
+}
+if (-not (Test-Path $CodeIdentifiersPath)) {
+    if ($WhatIf) {
+        Write-Host "Would create registry key: $CodeIdentifiersPath"
+    } else {
+        New-Item $CodeIdentifiersPath | Out-Null
+    }
+}
+if (-not (Test-Path "$CodeIdentifiersPath\0")) {
+    if ($WhatIf) {
+        Write-Host "Would create registry key: $CodeIdentifiersPath\0"
+    } else {
+        New-Item "$CodeIdentifiersPath\0" | Out-Null
+    }
+}
+if (-not (Test-Path $PathsPath)) {
+    if ($WhatIf) {
+        Write-Host "Would create registry key: $PathsPath"
+    } else {
+        New-Item $PathsPath | Out-Null
+    }
+}
 
 ##  Set ExecutableTypes if not already set
 $currentExtensions = (Get-ItemProperty -Path $CodeIdentifiersPath -Name 'ExecutableTypes' -ErrorAction SilentlyContinue).ExecutableTypes
 if (-not $currentExtensions) {
-    New-ItemProperty -Path $CodeIdentifiersPath -Name 'ExecutableTypes' -Value $RestrictedExtensions -PropertyType MultiString | Out-Null
+    if ($WhatIf) {
+        Write-Host "Would set ExecutableTypes to: $($RestrictedExtensions -join ', ')"
+    } else {
+        New-ItemProperty -Path $CodeIdentifiersPath -Name 'ExecutableTypes' -Value $RestrictedExtensions -PropertyType MultiString | Out-Null
+    }
 }
 
 ##  Set other policy values if not already set
@@ -72,7 +102,11 @@ $policyDefaults = @{
 }
 foreach ($name in $policyDefaults.Keys) {
     if (-not (Get-ItemProperty -Path $CodeIdentifiersPath -Name $name -ErrorAction SilentlyContinue)) {
-        New-ItemProperty -Path $CodeIdentifiersPath -Name $name -Value $policyDefaults[$name] -PropertyType DWord | Out-Null
+        if ($WhatIf) {
+            Write-Host "Would set $name to $($policyDefaults[$name])"
+        } else {
+            New-ItemProperty -Path $CodeIdentifiersPath -Name $name -Value $policyDefaults[$name] -PropertyType DWord | Out-Null
+        }
     }
 }
 
@@ -92,11 +126,16 @@ foreach ($Directory in $RestrictedDirectories) {
     if (-not $alreadyExists) {
         $pathguid = [guid]::NewGuid()
         $newpathkey = "$PathsPath\{$pathguid}"
-        New-Item $newpathkey | Out-Null
-        New-ItemProperty -Path $newpathkey -Name 'SaferFlags' -Value 0 -PropertyType DWord | Out-Null
-        New-ItemProperty -Path $newpathkey -Name 'ItemData' -Value $Directory -PropertyType ExpandString | Out-Null
+        if ($WhatIf) {
+            Write-Host "Would create path rule for $Directory at $newpathkey"
+            Write-Host "Would set SaferFlags=0 and ItemData=$Directory"
+        } else {
+            New-Item $newpathkey | Out-Null
+            New-ItemProperty -Path $newpathkey -Name 'SaferFlags' -Value 0 -PropertyType DWord | Out-Null
+            New-ItemProperty -Path $newpathkey -Name 'ItemData' -Value $Directory -PropertyType ExpandString | Out-Null
+        }
     }
 }
 
-##  Sync with domain's GPO
-gpupdate.exe /force
+# ##  Sync with domain's GPO
+# gpupdate.exe /force
